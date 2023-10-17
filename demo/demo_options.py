@@ -43,7 +43,7 @@ class DemoOptions():
         parser.add_argument('--use_smplx', action='store_true', help='Use SMPLX model for body mocap')
 
         # Hand mocap specific options
-        parser.add_argument('--view_type', type=str, default='third_view', choices=['third_view', 'ego_centric'],
+        parser.add_argument('--view_type', type=str, default='ego_centric', choices=['third_view', 'ego_centric'],
             help = "The view type of input. It could be ego-centric (such as epic kitchen) or third view")
         parser.add_argument('--crop_type', type=str, default='no_crop', choices=['hand_crop', 'no_crop'],
             help = """ 'hand_crop' means the hand are central cropped in input. (left hand should be flipped to right). 

@@ -1,4 +1,4 @@
-#!/bin/bash
+    #!/bin/bash
 
 # Copyright (c) Facebook, Inc. and its affiliates.
 

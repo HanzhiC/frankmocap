@@ -1,0 +1,10 @@
+# use f3rm env 
+conda activate f3rm
+
+# start a new terminal with no cuda loading, install hand detectors ..
+bash scripts/install_frankmocap.sh
+
+# load cuda to run hand detectors
+module load cuda/11.3.1
+
+python -m demo.demo_handmocap --input_path ../BundleSDF/data/2022-11-18-15-10-24_milk/rgb/ --start_frame 651 --end_frame 700  --out_dir ./mocap_output --view_type ego_centric --no_display --single_person --save_pred_pkl --save_mesh --save_frame --save_bbox_output
